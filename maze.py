@@ -1,5 +1,5 @@
 import pygame
-from constants import CELL_WIDTH, image_size
+from constants import WALL, GOAL, CELL_WIDTH, image_size
 
 
 class Maze:
@@ -21,9 +21,9 @@ class Maze:
         for row in self.maze_structure:
             current_cell_rect.x = 0
             for cell in row:
-                if cell == 2:
+                if cell == GOAL:
                     self.image.blit(goal, current_cell_rect)
-                elif cell == 1:
+                elif cell == WALL:
                     self.image.blit(wall, current_cell_rect)
                 else:
                     self.image.blit(path, current_cell_rect)

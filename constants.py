@@ -18,7 +18,10 @@ maze_structure = [
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 1],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 ]
+PATH = 0
+WALL = 1
+GOAL = 2
 
 CELL_WIDTH = 40
 image_size = len(maze_structure) * CELL_WIDTH
-FPS = 5
+FPS = 60
